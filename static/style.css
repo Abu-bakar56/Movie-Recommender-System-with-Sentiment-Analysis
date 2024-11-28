@@ -1,0 +1,871 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(0, 0, 0);
+
+
+  height: 100vh;
+  margin: 0;
+
+
+}
+
+.results img {
+  max-width: 100%;
+  height: 70%;
+}
+
+.results .col {
+  margin-bottom: 1rem;
+}
+
+.logo {
+
+  display: inline-block;
+  position: relative;
+  font-family: 'Anton', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #E50914;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin: 0;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4),
+    0 2px 0 rgba(0, 0, 0, 0.2),
+    0 3px 0 rgba(0, 0, 0, 0.1);
+
+
+}
+
+.middle-letter {
+  display: inline-block;
+  position: relative;
+  top: -0.05rem;
+}
+
+.main {
+
+  background-image: url("bg.jpg");
+  background-size: cover;
+
+}
+
+.main::before,
+.main::after {
+
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+}
+
+.main::before {
+  top: 0;
+}
+
+.main::after {
+  bottom: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+}
+
+.main::after {
+  content: "";
+  display: block;
+  height: 10px;
+  width: 100%;
+  background-color: rgb(46, 44, 44);
+  margin-bottom: 10px;
+}
+
+
+p {
+
+  margin-top: 50px;
+  color: white;
+  text-align: center;
+
+
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+}
+
+h5 {
+
+  color: white;
+  text-align: center;
+
+}
+
+
+
+
+
+.line {
+  width: 100%;
+  height: 5px;
+  background-color: rgb(116, 122, 122);
+}
+
+
+
+
+
+.posters {
+  display: flex;
+  margin-left: 100px;
+  margin-top: 50px;
+
+}
+
+.poster img {
+  width: 80%;
+  height: 80%;
+}
+
+.sters {
+  display: flex;
+  margin-left: 100px;
+  margin-top: 100px;
+}
+
+.ster img {
+  width: 80%;
+  height: 80%;
+}
+
+
+
+.slider-contai {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  animation: scroll 20s linear infinite;
+}
+
+.slider-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.oster {
+  flex-shrink: 0;
+  width: 200px;
+  margin-right: 10px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: #E50914;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+
+
+.slider-contt {
+  margin-top: 120px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+@keyframes scrollReverse {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.slid {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  animation: scrollReverse 20s linear infinite;
+}
+
+.slider-cont {
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+.er {
+  flex-shrink: 0;
+  width: 200px;
+  margin-right: 10px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+
+
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  background: transparent;
+}
+
+.footer::before {
+  content: "";
+  display: block;
+  height: 10px;
+  width: 100%;
+  background-color: rgb(46, 44, 44);
+  margin-bottom: 10px;
+}
+
+.footer-text p {
+  margin: 2rem 22%;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.footer-iconTop a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem;
+  margin-right: 100px;
+  background: transparent;
+  border-radius: 0.8rem;
+  transition: 0.5s ease;
+}
+
+.footer-iconTop a:hover {
+  box-shadow: 0 0 1rem white;
+}
+
+.footer-iconTop a i {
+
+  font-size: 2.4rem;
+  color: white;
+
+}
+
+
+/* For small phones (less than 790px) */
+
+@media (max-width: 790px) {
+  .container-fluid {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  /* .container-fluid .logo{
+        margin-left: 40px;
+    } */
+  /* .container-fluid .d-flex{
+    margin-left: 50px;
+   }
+    */
+  .card {
+    height: 100% !important;
+    margin-left: 32px !important;
+  }
+
+  .results {
+    margin-left: 13px !important;
+  }
+
+  .card-body btn {
+    margin-top: 0px !important;
+  }
+
+
+  .container .row .ee {
+    width: 80% !important;
+    margin-left: -30px !important;
+  }
+
+  .container .row .ff .btn {
+    width: 70% !important;
+    margin-left: 550px !important;
+    height: 40px !important;
+    margin-top: -100px;
+  }
+
+
+  #movieSelect option {
+
+    font-size: 0.6rem !important;
+    /* Adjust width as needed */
+
+  }
+
+
+
+
+  .container-fluid a {
+    margin-top: 50px;
+    margin-left: 80px;
+  }
+
+  .d-flex {
+    margin-top: 20px;
+
+  }
+
+
+  .col-md-9 {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h5 {
+    font-size: 0.9rem;
+  }
+
+  .form-control {
+    width: 100%;
+
+    margin-bottom: 10px;
+  }
+
+
+
+  #recommendBtn {
+    font-size: 0.7rem;
+  }
+
+  .posters {
+    margin-left: 15px;
+    margin-bottom: 20px;
+    height: 100%;
+
+  }
+
+  .posters .poster {
+    height: 100%;
+  }
+
+  .sters {
+    margin-left: 15px;
+    margin-bottom: 20px;
+    height: 100%;
+
+  }
+
+  .sters .poster {
+    height: 100%;
+  }
+
+  .footer-text p {
+    margin: 0;
+    font-size: 1rem;
+    margin-left: 50px;
+
+  }
+
+  .footer-text {
+    width: 80%;
+    margin-left: 30px;
+  }
+
+  .footer {
+    display: flex;
+  }
+
+  .footer-iconTop {
+    display: none;
+  }
+
+  .container-fluid .btn {
+    height: 80% !important;
+  }
+
+
+  .results .col-md-4 {
+    width: 95% !important;
+    margin-bottom: 10px !important;
+
+  }
+
+
+
+}
+
+
+
+
+/* For small phones (less than 575px) */
+
+@media (max-width: 575px) {
+  .container-fluid {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .container-fluid .logo {
+    margin-left: 40px;
+  }
+
+  .container-fluid .d-flex {
+    margin-left: 50px;
+  }
+
+  .card {
+    height: 100% !important;
+    margin-left: 32px !important;
+  }
+
+  .results {
+    margin-left: 13px !important;
+  }
+
+  .card-body btn {
+    margin-top: 0px !important;
+  }
+
+
+  .container .row .ee {
+    width: 90% !important;
+    /* margin-left: 10px !important; */
+  }
+
+  .container .row .ff .btn {
+    width: 90% !important;
+    margin-left: 20px !important;
+    height: 40px !important;
+  }
+
+
+  #movieSelect option {
+
+    font-size: 0.5rem !important;
+    /* Adjust width as needed */
+
+  }
+
+
+
+
+  .container-fluid a {
+    margin-top: 50px;
+    margin-left: 80px;
+  }
+
+  .d-flex {
+    margin-top: 20px;
+
+  }
+
+
+  .col-md-9 {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h5 {
+    font-size: 0.9rem;
+  }
+
+  .form-control {
+    width: 100%;
+
+    margin-bottom: 10px;
+  }
+  .form-group{
+    margin-left: 50px !important;
+    width: 250px !important;
+  }
+
+
+
+  #recommendBtn {
+    font-size: 0.5rem;
+    width: 100px !important;
+    margin-left: 300px !important;
+  }
+
+  .posters {
+    margin-left: 15px;
+    margin-bottom: 20px;
+    height: 100%;
+
+  }
+
+  .posters .poster {
+    height: 100%;
+  }
+
+  .sters {
+    margin-left: 15px;
+    margin-bottom: 20px;
+    height: 100%;
+
+  }
+
+  .sters .poster {
+    height: 100%;
+  }
+
+  .footer-text p {
+    margin: 0;
+    font-size: 0.7rem;
+
+  }
+
+  .footer-text {
+    width: 80%;
+    margin-left: 30px;
+  }
+
+  .footer {
+    display: flex;
+  }
+
+  .footer-iconTop {
+    display: none;
+  }
+
+  .container-fluid .btn {
+    height: 80% !important;
+  }
+
+
+  .results .col-md-4 {
+    width: 95% !important;
+    margin-bottom: 10px !important;
+
+  }
+
+
+
+}
+
+
+
+/* For small phones (less than 380px) */
+
+@media (max-width: 380px) {
+  .container-fluid {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .container-fluid .d-flex {
+    margin-left: 20px;
+  }
+
+
+  .card {
+    height: 100% !important;
+    margin-left: 32px !important;
+  }
+
+  .results {
+    margin-left: 13px !important;
+  }
+
+  .card-body btn {
+    margin-top: 0px !important;
+  }
+
+
+  .container .row .ee {
+    width: 90% !important;
+    margin-left: 10px !important;
+  }
+
+  .container .row .ff .btn {
+    width: 90% !important;
+    margin-left: 10px !important;
+    height: 40px !important;
+  }
+
+
+  #movieSelect option {
+
+    font-size: 0.5rem !important;
+    /* Adjust width as needed */
+
+  }
+
+
+
+
+  .container-fluid a {
+    margin-top: 50px;
+    margin-left: 80px;
+  }
+
+  .d-flex {
+    margin-top: 20px;
+
+  }
+
+
+  .col-md-9 {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h5 {
+    font-size: 0.9rem;
+  }
+
+  .form-control {
+    width: 100%;
+
+    margin-bottom: 10px;
+  }
+
+
+
+  #recommendBtn {
+    font-size: 0.9rem;
+  }
+
+  .posters {
+    margin-left: 15px;
+    margin-bottom: 20px;
+    height: 100%;
+
+  }
+
+  .posters .poster {
+    height: 100%;
+  }
+
+  .sters {
+    margin-left: 15px;
+    margin-bottom: 20px;
+    height: 100%;
+
+  }
+
+  .sters .poster {
+    height: 100%;
+  }
+
+  .footer-text p {
+    margin: 0;
+    font-size: 0.7rem;
+
+  }
+
+  .footer-text {
+    width: 80%;
+    margin-left: 30px;
+  }
+
+  .footer {
+    display: flex;
+  }
+
+  .footer-iconTop {
+    display: none;
+  }
+
+  .container-fluid .btn {
+    height: 80% !important;
+  }
+
+
+  .results .col-md-4 {
+    width: 95% !important;
+    margin-bottom: 10px !important;
+
+  }
+
+
+
+}
+
+
+/* For small phones (less than 330px) */
+
+@media (max-width: 400px) {
+  .container-fluid {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+.container-fluid .logo{
+  margin-left: -15px;
+}
+
+  .card {
+    height: 100% !important;
+    margin-left: 32px !important;
+  }
+
+  .card-body btn {
+    margin-top: 0px !important;
+  }
+
+
+  .container .row .ee {
+    width: 90% !important;
+    margin-left: 10px !important;
+  }
+
+  .container .row .ff .btn {
+    width: 90% !important;
+    margin-left: 10px !important;
+    height: 40px !important;
+    margin-top: 10px;
+  }
+
+
+
+
+
+
+  .container-fluid a {
+    margin-top: 50px;
+    margin-left: 80px;
+  }
+
+  .d-flex {
+    margin-top: 20px;
+  }
+
+
+  .col-md-9 {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h5 {
+    font-size: 0.9rem;
+  }
+
+  .form-control {
+    width: 100%;
+
+    margin-bottom: 10px;
+  }
+
+  #movieSelect option {
+
+    font-size: 0.4rem !important;
+    /* Adjust width as needed */
+
+  }
+
+
+  #recommendBtn {
+    font-size: 0.9rem;
+  }
+
+  .posters {
+    margin-left: 15px;
+    margin-bottom: 20px;
+    height: 100%;
+
+  }
+
+  .posters .poster {
+    height: 100%;
+  }
+
+  .sters {
+    margin-left: 15px;
+    margin-bottom: 20px;
+    height: 100%;
+
+  }
+
+  .sters .poster {
+    height: 100%;
+  }
+
+  .footer-text p {
+    margin: 0;
+    font-size: 0.7rem;
+
+  }
+
+  .footer-text {
+    width: 80%;
+    margin-left: 30px;
+  }
+
+  .footer {
+    display: flex;
+  }
+
+  .footer-iconTop {
+    display: none;
+  }
+
+  .container-fluid .btn {
+    height: 80% !important;
+  }
+
+
+  .results .col-md-4 {
+    width: 95% !important;
+    margin-bottom: 10px !important;
+
+  }
+
+
+
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiemtal Analysis On Movie</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='resultcss.css') }}">
+</head>
+<body>
+<div class="main">
+    <nav class=" navbar navbar-expand-sm .offcanvas">
+      <div class="container-fluid mx-5">
+
+
+        <a href="#" style="cursor: pointer;">
+          <div class="logo">
+            F<span class="middle-letter">ilmAur</span>a
+          </div>
+        </a>
+
+
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search"  style="height: 40px; margin-top: 20px;" placeholder="Enter your email" aria-label="Search">
+          <button class="btn" type="submit">Login</button>
+        </form>
+      </div>
+
+    </nav>
+
+
+
+    <h1>Sentiemtal Analysis On Movie</h1>
+    
+    <h2 id="movieName">Movie Name</h2>
+
+
+
+
+
+  </div>
+
+
+
+
+
+    
+   
+    <table id="resultsTable">
+        <thead>
+            <tr>
+                <th>Review</th>
+                <th>Prediction</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+  
+        
+
+        <footer class="footer">
+            <div class="footer-text">
+              <p>Copyright &copy; 2024 by AbuBakar Shahzad | All Rights Reserved
+              </p>
+            </div>
+            <div class="footer-iconTop">
+              <a href="/"><i class='bx bx-arrow-back'></i></a>
+        
+            </div>
+          </footer>
+ 
+    <script src="{{ url_for('static', filename='result.js') }}"></script>
+</body>
+
+</html>

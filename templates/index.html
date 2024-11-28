@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Recommender System</title>
+  <link rel="icon" href="{{ url_for('static', filename='el.svg') }}">
+
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+  <div class="main">
+    <nav class=" navbar navbar-expand-sm .offcanvas">
+      <div class="container-fluid mx-5">
+
+
+        <a href="#" style="cursor: pointer;">
+          <div class="logo">
+            F<span class="middle-letter">ilmAur</span>a
+          </div>
+        </a>
+
+
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Enter your email" aria-label="Search">
+          <button class="btn" type="submit">Login</button>
+        </form>
+      </div>
+
+    </nav>
+
+
+
+    <h1>Movie Recommender System</h1>
+    <h5>
+      Discover, Watch, Enjoy
+    </h5>
+
+
+
+
+
+
+    <div class="container mt-4">
+      <div class="row">
+        <div class=" ee col-md-9 " style="width: 50%; margin-left: 250px;">
+          <div class="form-group">
+
+            <select id="movieSelect" class="form-control" style="color: rgb(229,9,20);">
+
+            </select>
+          </div>
+        </div>
+        <div class="ff col-md-3 d-flex align-items-center">
+          <button id="recommendBtn" class="btn">Get Recommendations</button>
+        </div>
+      </div>
+      <p>Discover Movies You’ll Adore!
+
+        Ready to watch?</p>
+
+      <div class="row results mt-4">
+        <div class="col-md-4" id="col1"></div>
+        <div class="col-md-4" id="col2"></div>
+        <div class="col-md-4" id="col3"></div>
+        <div class="col-md-4" id="col4"></div>
+        <div class="col-md-4" id="col5"></div>
+        <div class="col-md-4" id="col6"></div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="posters" class="posters">
+
+
+  </div>
+
+
+
+  <div class="slider-contai">
+    <div class="slider">
+      <div id="posterrr" class="slider-content"></div>
+    </div>
+  </div>
+
+
+
+  <div class="slider-contt">
+    <div class="slid">
+      <div id="post" class="slider-cont"></div>
+    </div>
+  </div>
+
+
+
+
+  <div id="sters" class="sters"></div>
+  <footer class="footer">
+    <div class="footer-text">
+      <p>Copyright &copy; 2024 by AbuBakar Shahzad | All Rights Reserved
+      </p>
+    </div>
+    <div class="footer-iconTop">
+      <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
+
+    </div>
+  </footer>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
