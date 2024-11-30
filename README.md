@@ -22,17 +22,25 @@ A **responsive Flask-based Movie Recommender System** that combines **personaliz
 ---
 
 ## 🌐 Live Demo:
-[**Check out the live app here!**](#) *(Replace `#` with your deployed app's link)*  
+[**Check out the live app here!**](#) *(https://movie-recommender-system-with-sentiment.onrender.com)*  
+
+---
+
+
+## 🎥 Video Demo:
+
+
+https://github.com/user-attachments/assets/93309cef-15f6-46f2-829b-4b84edbebe55
+
 
 ---
 
 ## 📸 Screenshots:
-*(Add screenshots of the homepage, recommendation page, and sentiment analysis results)*  
+![WhatsApp Image 2024-11-30 at 16 10 41_de57c39e](https://github.com/user-attachments/assets/31f57fc7-b13a-492b-994c-9ebb9a6d676f)
 
----
 
-## 🎥 Video Demo:
-*(Include a link to the video showcasing the app in action.)*
+![WhatsApp Image 2024-11-30 at 16 10 42_0ed54972](https://github.com/user-attachments/assets/a898827e-5f2e-48f6-bf3c-bea36a978dff)
+
 
 ---
 
