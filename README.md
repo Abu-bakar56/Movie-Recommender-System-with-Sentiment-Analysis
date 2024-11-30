@@ -22,7 +22,7 @@ A **responsive Flask-based Movie Recommender System** that combines **personaliz
 ---
 
 ## 🌐 Live Demo:
-[**Check out the live app here!**](#) *(https://movie-recommender-system-with-sentiment.onrender.com)*  
+[**Check out the live app here!**](https://movie-recommender-system-with-sentiment.onrender.com)   
 
 ---
 
